@@ -15,3 +15,7 @@
   margin: 0;
   margin-left: 10px;
 }
+
+.AppContent__item + p {
+  font-size: 2rem;
+}
