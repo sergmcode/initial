@@ -1,6 +1,17 @@
 .AppContent {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #ccc;
+  /* background-color: rgb(226, 210, 145); */
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 10px;
+  /* border: 1px dashed; */
+}
+
+.AppContent__item {
+  display: inline-block;
+  padding: 15px;
+  background-color: hotpink;
+  margin: 0;
+  margin-left: 10px;
 }

@@ -1,7 +1,38 @@
 .AppHeader {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-  background-color: #ddd;
+  /* height: 80px; */
+  display: block;
+  box-sizing: content-box;
+  background-color: cadetblue;
+  text-align: center;
+  box-shadow: 5px 5px 15px rgb(231, 236, 224);
+}
+
+.AppHeader__header {
+  margin-bottom: 0;
+}
+
+.AppHeader__item {
+  display: inline-block;
+  /* width: 100px; */
+  /* height: 50px; */
+  background-color: beige;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* min-height: 400px; */
+  transition-duration: 0.25s;
+  cursor: pointer;
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px grey;
+}
+
+.AppHeader__item:hover {
+  background-color: lawngreen;
+}
+
+.AppHeader__item:active {
+  background-color: lightsalmon;
 }

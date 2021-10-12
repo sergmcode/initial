@@ -1,6 +1,7 @@
-import { ETodoActionType, ITodo, TTodoAction } from "../../types/todoTypes";
-import { Dispatch } from "redux";
-import { TRootState } from "../store";
+import { ETodoActionType, ITodo, TTodoAction } from "../../types/todo";
+import { AnyAction, Dispatch } from "redux";
+import { TRootState } from "..";
+import { ThunkAction } from "redux-thunk";
 
 export function setError(error: string): TTodoAction {
   return { type: ETodoActionType.SET_ERROR, payload: error }
@@ -18,4 +19,15 @@ export function fetchTodos() {
   return async function(dispatch: Dispatch, getState: () => TRootState) {
     
   }
+}
+
+export const thunkSetError =
+  (errorMessage: string): ThunkAction<void, TRootState, unknown, AnyAction> =>
+  async dispatch => {
+    const asyncResp = await exampleAPI()
+    dispatch(setError(errorMessage))
+  }
+
+function exampleAPI() {
+  return Promise.resolve('__')
 }

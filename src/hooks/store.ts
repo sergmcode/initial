@@ -1,6 +1,9 @@
 import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux"
+import { Action } from "redux"
 import { ThunkDispatch } from "redux-thunk"
-import { TAppDispatch, TRootState } from "../store/store"
+import { TAppDispatch, TRootState } from "../store"
 
 export const useAppDispatch = () => useDispatch<TAppDispatch>()
 export const useAppSelector: TypedUseSelectorHook<TRootState> = useSelector
+// export const useThunkDispatch = () => useDispatch<ThunkDispatch<any,any,any>>()
+
