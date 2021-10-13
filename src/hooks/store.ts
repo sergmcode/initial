@@ -5,7 +5,6 @@ import { TAppDispatch, TRootState } from "../store"
 
 export const useAppDispatch = () => useDispatch<TAppDispatch>()
 export const useAppThunkDispatch = () => useDispatch<ThunkDispatch<TRootState, any, any>>()
-// export const useThunkDispatch = () => useDispatch<ThunkDispatch<any,any,any>>()
 
 export const useAppSelector: TypedUseSelectorHook<TRootState> = useSelector
 

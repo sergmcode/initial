@@ -1,4 +1,4 @@
-.AppContent {
+.HomeContent {
   /* background-color: rgb(226, 210, 145); */
   display: block;
   box-sizing: border-box;
@@ -8,14 +8,21 @@
   /* border: 1px dashed; */
 }
 
-.AppContent__item {
+.HomeContent__item {
   display: inline-block;
   padding: 15px;
   background-color: hotpink;
   margin: 0;
   margin-left: 10px;
+  margin-top: 5px;
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
 }
 
-.AppContent__item + p {
+.HomeContent__item + p {
   font-size: 2rem;
+}
+
+.HomeContent__counterInfo {
+  background-color: pink;
+  margin-top: 10px;
 }

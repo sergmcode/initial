@@ -36,3 +36,12 @@
 .AppHeader__item:active {
   background-color: lightsalmon;
 }
+
+.AppHeader__item + input {
+  border: none;
+}
+
+.AppHeader__item + input:active {
+  border: none;
+  /* background-color: rgb(215, 255, 169); */
+}

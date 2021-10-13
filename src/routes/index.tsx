@@ -1,11 +1,9 @@
-import React, { FC } from 'react'
-import { Route, Switch } from 'react-router'
-import { HomePage } from '../pages/home'
-import { LoginPage } from '../pages/login'
+import React, { FC } from "react";
+import { Route, Switch } from "react-router";
+import { HomePage } from "../pages/home";
+import { LoginPage } from "../pages/login";
 
-interface Props {
-  
-}
+interface Props {}
 
 export const AppRoutes: FC = (props: Props) => {
   return (
@@ -13,5 +11,5 @@ export const AppRoutes: FC = (props: Props) => {
       <Route path="/login" component={LoginPage} />
       <Route path="/" component={HomePage} />
     </Switch>
-  )
-}
+  );
+};

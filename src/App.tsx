@@ -1,14 +1,14 @@
-import './App.css';
-import AppHeader from './components/AppHeader/AppHeader';
-import AppContent from './components/AppContent/AppContent';
-import 'antd/dist/antd.css';
-
+import { BrowserRouter } from 'react-router-dom';
+import { AppRoutes } from './routes';
+import { Provider } from 'react-redux';
+import { store } from './store';
 function App() {
   return (
-    <div className="App">
-      <AppHeader />
-      <AppContent />
-    </div>
+    <Provider store={store}>
+      <BrowserRouter>
+        <AppRoutes />    
+      </BrowserRouter>
+    </Provider>
   );
 }
 
